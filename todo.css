@@ -3,6 +3,8 @@
   --muted: #667085;
   --paper: #fffdf8;
   --accent: #2878a8;
+  --accent-dark: #1d5f87;
+  --soft: #f9f4ee;
   --line: #eadfd3;
 }
 
@@ -26,13 +28,16 @@ body {
   margin: 0 auto;
   background: var(--paper);
   border: 1px solid var(--line);
+  border-top: 8px solid var(--accent);
   box-shadow: 0 24px 60px rgba(75, 55, 40, 0.14);
 }
 
 .back-link {
+  display: inline-block;
   color: var(--accent);
   font-family: Arial, sans-serif;
   font-weight: bold;
+  text-underline-offset: 4px;
 }
 
 h1 {
@@ -44,6 +49,7 @@ h1 {
 .intro {
   margin-top: 0;
   color: var(--muted);
+  font-size: 1.05rem;
 }
 
 label {
@@ -67,6 +73,8 @@ input {
   flex: 1;
   min-width: 0;
   padding: 8px 12px;
+  color: var(--ink);
+  background: #fff;
   border: 1px solid #b9c5cc;
 }
 
@@ -76,11 +84,12 @@ button {
   background: var(--accent);
   border: 0;
   cursor: pointer;
+  font-weight: bold;
 }
 
 button:hover,
 button:focus-visible {
-  background: #1d5f87;
+  background: var(--accent-dark);
 }
 
 a:focus-visible,
@@ -112,13 +121,21 @@ input:focus-visible {
   justify-content: space-between;
   gap: 16px;
   padding: 12px 14px;
-  background: #f9f4ee;
+  background: var(--soft);
   border-left: 4px solid var(--accent);
+  box-shadow: 0 2px 0 rgba(75, 55, 40, 0.05);
+  transition: border-color 160ms ease, transform 160ms ease;
+}
+
+#task-list li:hover {
+  border-left-color: var(--accent-dark);
+  transform: translateX(3px);
 }
 
 .task-content {
   display: flex;
   align-items: center;
+  min-width: 0;
   gap: 10px;
 }
 
@@ -126,6 +143,10 @@ input:focus-visible {
   flex: 0 0 auto;
   width: 18px;
   height: 18px;
+}
+
+.task-content span {
+  overflow-wrap: anywhere;
 }
 
 .completed {
@@ -144,7 +165,7 @@ input:focus-visible {
 #task-list li button:hover,
 #task-list li button:focus-visible {
   color: #fff;
-  background: var(--accent);
+  background: var(--accent-dark);
 }
 
 @media (max-width: 480px) {
