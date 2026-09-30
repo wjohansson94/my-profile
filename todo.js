@@ -5,6 +5,17 @@ const status = document.querySelector("#status");
 const savedTasks = localStorage.getItem("profileTasks");
 let tasks = savedTasks ? JSON.parse(savedTasks) : [];
 
+tasks = tasks.map(function (task) {
+  if (typeof task === "string") {
+    return {
+      text: task,
+      completed: false
+    };
+  }
+
+  return task;
+});
+
 function saveTasks() {
   localStorage.setItem("profileTasks", JSON.stringify(tasks));
 }
@@ -12,12 +23,30 @@ function saveTasks() {
 function renderTasks() {
   taskList.innerHTML = "";
 
-  tasks.forEach(function (taskText, taskIndex) {
+  tasks.forEach(function (taskData, taskIndex) {
     const task = document.createElement("li");
+    const taskContent = document.createElement("div");
+    const checkbox = document.createElement("input");
     const taskLabel = document.createElement("span");
     const deleteButton = document.createElement("button");
 
-    taskLabel.textContent = taskText;
+    checkbox.type = "checkbox";
+    checkbox.checked = taskData.completed;
+    taskLabel.textContent = taskData.text;
+
+    if (taskData.completed) {
+      taskLabel.classList.add("completed");
+    }
+
+    checkbox.addEventListener("change", function () {
+      taskData.completed = checkbox.checked;
+      taskLabel.classList.toggle("completed", checkbox.checked);
+      saveTasks();
+      status.textContent = checkbox.checked
+        ? "Task completed."
+        : "Task marked incomplete.";
+    });
+
     deleteButton.type = "button";
     deleteButton.textContent = "Delete";
     deleteButton.addEventListener("click", function () {
@@ -27,7 +56,8 @@ function renderTasks() {
       status.textContent = "Task deleted.";
     });
 
-    task.append(taskLabel, deleteButton);
+    taskContent.append(checkbox, taskLabel);
+    task.append(taskContent, deleteButton);
     taskList.append(task);
   });
 }
@@ -40,7 +70,10 @@ todoForm.addEventListener("submit", function (event) {
     return;
   }
 
-  tasks.push(taskText);
+  tasks.push({
+    text: taskText,
+    completed: false
+  });
   saveTasks();
   renderTasks();
   taskInput.value = "";

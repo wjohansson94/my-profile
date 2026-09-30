@@ -116,6 +116,23 @@ input:focus-visible {
   border-left: 4px solid var(--accent);
 }
 
+.task-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.task-content input {
+  flex: 0 0 auto;
+  width: 18px;
+  height: 18px;
+}
+
+.completed {
+  color: var(--muted);
+  text-decoration: line-through;
+}
+
 #task-list li button {
   min-height: 36px;
   padding: 6px 10px;
