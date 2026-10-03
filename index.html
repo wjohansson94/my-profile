@@ -8,6 +8,7 @@
     <link rel="icon" type="image/png" href="favicon.png" />
   </head>
   <body>
+    <a class="skip-link" href="#projects-heading">Skip to projects</a>
     <main class="profile-card">
       <section class="intro">
         <img
@@ -17,10 +18,11 @@
         />
         <p class="eyebrow">Hello, I am</p>
         <h1>Wilhelm Johansson</h1>
-        <p class="role">Beginner web developer</p>
+        <p class="role">Front-End Developer &amp; Technology Enthusiast</p>
         <p class="bio">
-          I am learning how to build websites with HTML, CSS, and JavaScript. I
-          enjoy turning simple ideas into clean, useful pages.
+          Creating modern and responsive web experiences while continuously
+          learning new technologies, development tools, and AI-powered
+          workflows.
         </p>
         <a class="button" href="mailto:wjohansson94@outlook.com">Contact me</a>
 
@@ -32,8 +34,27 @@
         <div>
           <h2>About me</h2>
           <p>
-            I am curious, creative, and excited to keep learning. This is my
-            first profile page, and I will improve it as my skills grow.
+            I'm Wilhelm, an aspiring front-end developer with a passion for
+            building modern and engaging web experiences.
+          </p>
+          <p>
+            Currently, I'm developing my skills in HTML, CSS, JavaScript and
+            responsive design while exploring technologies such as GitHub
+            Copilot, AI-assisted development, and modern web application
+            workflows.
+          </p>
+          <p>
+            I enjoy combining creativity with problem-solving to transform ideas
+            into clean, intuitive, and user-friendly digital experiences.
+          </p>
+          <p>
+            When I'm not learning new development techniques, you'll often find
+            me exploring emerging technologies, cybersecurity topics, and
+            innovative tools that help developers build better software.
+          </p>
+          <p>
+            My goal is to continue growing as a developer and contribute to
+            projects that create meaningful value for users.
           </p>
         </div>
 
@@ -48,33 +69,100 @@
         </div>
 
         <div class="projects">
-          <h2>My projects</h2>
+          <h2 id="projects-heading" tabindex="-1">My projects</h2>
 
           <article>
+            <img
+              class="project-preview"
+              src="Profile%20page.png"
+              alt="Screenshot of Wilhelm's profile page, skills, and projects"
+            />
             <h3>Interactive profile page</h3>
             <p>
-              A responsive profile page built with HTML, CSS, and JavaScript. It
-              includes a favicon, keyboard-friendly controls, accessible status
-              messages, and an interactive greeting button.
+              A responsive personal profile built with HTML, CSS, and
+              JavaScript, with keyboard-accessible interactions and an
+              interactive greeting.
             </p>
-
-            <a
-              href="https://github.com/wjohansson94/my-profile"
-              target="_blank"
-              rel="noreferrer"
-            >
-              View project
-            </a>
+            <ul class="project-tech" aria-label="Technologies used">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="project-links">
+              <a
+                href="https://wjohansson94.github.io/my-profile/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Live demo
+              </a>
+              <a
+                href="https://github.com/wjohansson94/my-profile"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Source code
+              </a>
+            </div>
           </article>
 
           <article>
+            <img
+              class="project-preview"
+              src="To-do%20list.png"
+              alt="Screenshot of the to-do list app showing its task input and filters"
+            />
             <h3>JavaScript to-do list</h3>
             <p>
-              A to-do list built with HTML, CSS, and JavaScript. Tasks can be
-              added, completed, deleted, and saved in the browser using
-              localStorage.
+              A task manager with add, edit, complete, delete, and filter
+              controls. Tasks are saved in the browser with localStorage.
             </p>
-            <a href="todo.html">Try the to-do list</a>
+            <ul class="project-tech" aria-label="Technologies used">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>localStorage</li>
+            </ul>
+            <div class="project-links">
+              <a
+                href="https://wjohansson94.github.io/my-profile/todo.html"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Live demo
+              </a>
+              <a
+                href="https://github.com/wjohansson94/my-profile"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Source code
+              </a>
+            </div>
+          </article>
+
+          <article>
+            <h3>GitHub profile finder</h3>
+            <p>
+              Search public GitHub profiles, view account statistics, and
+              explore recently updated repositories using the GitHub REST API.
+            </p>
+            <ul class="project-tech" aria-label="Technologies used">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>GitHub REST API</li>
+            </ul>
+            <div class="project-links">
+              <a href="github.html">Live demo</a>
+              <a
+                href="https://github.com/wjohansson94/my-profile"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Source code
+              </a>
+            </div>
           </article>
         </div>
 

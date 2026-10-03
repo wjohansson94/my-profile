@@ -16,33 +16,27 @@ A responsive profile page built with HTML, CSS, and JavaScript. It includes a pr
 
 ### JavaScript to-do list
 
-A small task manager built with HTML, CSS, and JavaScript. Tasks can be added, completed, deleted, and saved in the browser with `localStorage`.
+A task manager built with HTML, CSS, and JavaScript. Tasks can be added, edited, completed, deleted, filtered, and saved in the browser with `localStorage`.
 
 [Try the to-do list](https://wjohansson94.github.io/my-profile/todo.html)
+
+### GitHub profile finder
+
+A GitHub REST API project that looks up public profiles, displays account statistics, and lists recently updated repositories.
+
+[Try the profile finder](https://wjohansson94.github.io/my-profile/github.html)
+
+### GitHub profile finder
 
 ## Built with
 
 - HTML
-- CSS
-- JavaScript
-- GitHub Pages
-
-## Project files
-
-- `index.html` - profile page structure
-- `style.css` - profile page styling
-- `script.js` - profile page interaction
-- `todo.html` - to-do list structure
-- `todo.css` - to-do list styling
-- `todo.js` - task management and local storage
+- `github.css` - GitHub profile finder styling
+- `github.js` - GitHub API requests and rendering
 - `profile.jpg` - profile image
-- `favicon.png` - browser tab icon
-
-## What I am learning
-
-- Semantic HTML
-- Responsive CSS layouts
 - JavaScript events and DOM updates
 - Browser storage with `localStorage`
+- Fetching data from public APIs
+- Loading and error states
 - Accessibility basics
 - Publishing websites with GitHub Pages
