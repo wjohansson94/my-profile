@@ -2,41 +2,54 @@
 
 My personal profile website, built while learning web development.
 
-## Live website
+## Live Website
 
 [View the live profile](https://wjohansson94.github.io/my-profile/)
 
 ## Projects
 
-### Interactive profile page
+### Interactive Profile Page
 
-A responsive profile page built with HTML, CSS, and JavaScript. It includes a profile photo, favicon, accessible controls, and an interactive greeting button.
+A responsive profile page introducing Wilhelm and showcasing his skills and projects. It includes a profile photo, keyboard-accessible controls, an interactive greeting, and project previews.
 
-[View the profile source code](https://github.com/wjohansson94/my-profile)
+[Live profile](https://wjohansson94.github.io/my-profile/) · [Source code](https://github.com/wjohansson94/my-profile)
 
-### JavaScript to-do list
+### JavaScript To-Do List
 
-A task manager built with HTML, CSS, and JavaScript. Tasks can be added, edited, completed, deleted, filtered, and saved in the browser with `localStorage`.
+A task manager built with HTML, CSS, and JavaScript. Tasks can be added, edited, completed, deleted, filtered by status, and saved in the browser with `localStorage`.
 
-[Try the to-do list](https://wjohansson94.github.io/my-profile/todo.html)
+[Live demo](https://wjohansson94.github.io/my-profile/todo.html) · [Source code](https://github.com/wjohansson94/my-profile)
 
-### GitHub profile finder
+### GitHub Profile Finder
 
-A GitHub REST API project that looks up public profiles, displays account statistics, and lists recently updated repositories.
+A GitHub REST API project that looks up public profiles, displays avatars and account statistics, and lists up to six recently updated repositories. It provides loading, not-found, timeout, network, and rate-limit feedback.
 
-[Try the profile finder](https://wjohansson94.github.io/my-profile/github.html)
+[Live demo](https://wjohansson94.github.io/my-profile/github.html) · [Source code](https://github.com/wjohansson94/my-profile)
 
-### GitHub profile finder
-
-## Built with
+## Built With
 
 - HTML
-- `github.css` - GitHub profile finder styling
-- `github.js` - GitHub API requests and rendering
-- `profile.jpg` - profile image
+- CSS
+- JavaScript
+- GitHub REST API
+- Browser storage with `localStorage`
+- GitHub Pages
+
+## Project Files
+
+- `index.html` and `style.css` - profile page content and styling
+- `script.js` - interactive greeting
+- `todo.html`, `todo.css`, and `todo.js` - to-do list structure, styling, and behavior
+- `github.html`, `github.css`, and `github.js` - GitHub profile finder
+- `profile.jpg` and `favicon.png` - profile image and browser icon
+- `Profile page.png` and `To-do list.png` - project preview images
+
+## What I Am Learning
+
+- Semantic HTML and accessible controls
+- Responsive CSS layouts
 - JavaScript events and DOM updates
 - Browser storage with `localStorage`
-- Fetching data from public APIs
-- Loading and error states
-- Accessibility basics
+- Fetching and displaying data from public APIs
+- Loading, success, and error states
 - Publishing websites with GitHub Pages
