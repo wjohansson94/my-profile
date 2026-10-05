@@ -6,6 +6,12 @@ My personal profile website, built while learning web development.
 
 [View the live profile](https://wjohansson94.github.io/my-profile/)
 
+## Find Me Online
+
+- [GitHub](https://github.com/wjohansson94)
+- [LinkedIn](https://www.linkedin.com/in/wilhelm-johansson94)
+- [Instagram](https://www.instagram.com/wilhelmbuilds/)
+
 ## Projects
 
 ### Interactive Profile Page
@@ -42,7 +48,7 @@ A GitHub REST API project that looks up public profiles, displays avatars and ac
 - `todo.html`, `todo.css`, and `todo.js` - to-do list structure, styling, and behavior
 - `github.html`, `github.css`, and `github.js` - GitHub profile finder
 - `profile.jpg` and `favicon.png` - profile image and browser icon
-- `Profile page.png` and `To-do list.png` - project preview images
+- `Profile page.png`, `To-do list.png`, and `github-finder.png` - project preview images
 
 ## What I Am Learning
 

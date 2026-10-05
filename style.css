@@ -199,9 +199,17 @@ h2 {
 }
 
 .links a {
+  display: inline-flex;
+  align-items: center;
   color: var(--accent-dark);
   font-family: Arial, sans-serif;
   font-weight: bold;
+}
+
+.social-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
 }
 
 @media (max-width: 680px) {
